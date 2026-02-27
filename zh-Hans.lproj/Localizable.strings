@@ -5,3 +5,7 @@
   Created by gaofeng on 2026/2/20.
   
 */
+
+"main_tab_task" = "任务";
+"main_tab_message" = "消息";
+"main_tab_setting" = "设置";
