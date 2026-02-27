@@ -14,6 +14,9 @@ let package = Package(
     .package(path: "Packages/AppNetwork"),
     .package(path: "Packages/AppBusinessCore"),
     .package(path: "Packages/AppFeatureCase"),
+    .package(path: "Packages/AppFeatureTask"),
+    .package(path: "Packages/AppFeatureMe"),
+    .package(path: "Packages/AppFeatureMessage"),
     .package(path: "Packages/AppPageMain"),
     .package(path: "Packages/AppLogin")
   ],
@@ -28,6 +31,9 @@ let package = Package(
           .product(name: "AppNetwork", package: "AppNetwork"),
           .product(name: "AppBusinessCore", package: "AppBusinessCore"),
           .product(name: "AppFeatureCase", package: "AppFeatureCase"),
+          .product(name: "AppFeatureTask", package: "AppFeatureTask"),
+          .product(name: "AppFeatureMe", package: "AppFeatureMe"),
+          .product(name: "AppFeatureMessage", package: "AppFeatureMessage"),
           .product(name: "AppPageMain", package: "AppPageMain"),
           .product(name: "AppLogin", package: "AppLogin"),
       ]

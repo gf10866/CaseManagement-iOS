@@ -11,6 +11,9 @@ import Foundation
 @_exported import AppUtils
 @_exported import AppNetwork
 @_exported import AppBusinessCore
+@_exported import AppFeatureTask
+@_exported import AppFeatureMe
+@_exported import AppFeatureMessage
 
 
 public enum AppModulesMarker {}

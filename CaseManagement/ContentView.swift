@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AppModules
 
 struct ContentView: View {
     var body: some View {
@@ -13,56 +14,20 @@ struct ContentView: View {
             TaskView()
                 .tabItem {
                     Image(systemName: "checklist")
-                    Text("任务")
+                    Text(String.lan("main_tab_task"))
                 }
 
             MessageView()
                 .tabItem {
                     Image(systemName: "message")
-                    Text("消息")
+                    Text(String.lan("main_tab_message"))
                 }
 
             SettingsView()
                 .tabItem {
                     Image(systemName: "gearshape")
-                    Text("设置")
+                    Text(String.lan("main_tab_setting"))
                 }
-        }
-    }
-}
-
-struct TaskView: View {
-    var body: some View {
-        NavigationStack {
-            VStack {
-                Text("任务页面")
-                    .font(.title)
-            }
-            .navigationTitle("任务")
-        }
-    }
-}
-
-struct MessageView: View {
-    var body: some View {
-        NavigationStack {
-            VStack {
-                Text("消息页面")
-                    .font(.title)
-            }
-            .navigationTitle("消息")
-        }
-    }
-}
-
-struct SettingsView: View {
-    var body: some View {
-        NavigationStack {
-            VStack {
-                Text("设置页面")
-                    .font(.title)
-            }
-            .navigationTitle("设置")
         }
     }
 }
